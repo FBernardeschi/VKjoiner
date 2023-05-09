@@ -1,0 +1,42 @@
+<main>
+    <div class="wrapper">
+        <div class="container">
+            <div class="main-block">
+                <form action="" method="POST">
+                    <input type="text" name="account" placeholder="login:pass" value="{{ (account) ? account : '' }}">
+                    <textarea name="groups" cols="20" rows="20" placeholder="groups&#13;&#10;groups&#13;&#10;groups"></textarea>
+                    <input type="submit" class="btn" value="Начать" name="joinGroups">
+                </form>
+            </div>
+        </div>
+    </div>    
+
+    <!-- join groups -->
+
+    <div class="wrapper-right">
+        <div class="container">
+            <div class="comment-block">
+                <form action="" method="POST">
+                    <textarea name="accs" cols="20" rows="8" placeholder="login:password&#13;&#10;login:password&#13;&#10;login:password">{{ (accounts) ? accounts : '' }}</textarea>
+                    <input type="text" name="wall" placeholder="wall-12345678_123456">
+                    <textarea name="text" cols="20" rows="8" placeholder="text&#13;&#10;text&#13;&#10;text"></textarea>
+                    <input type="submit" class="btn" value="Начать" name="comments">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- comment -->
+
+    <div class="wrapper-super-richt">
+        <div class="container">
+            <div class="blacklist-block">
+                <form action="" method="POST">
+                    <input type="text" name="account" placeholder="login:pass" value="{{ (account) ? account : '' }}">
+                    <textarea name="users" cols="20" rows="20" placeholder="users&#13;&#10;users&#13;&#10;users"></textarea>
+                    <input type="submit" class="btn" value="Начать" name="blacklist">
+                </form>
+            </div>
+        </div>
+    </div>
+</main>

@@ -1,0 +1,152 @@
+body {
+    position: relative;
+    padding: 0;margin: 0;
+    color: rgba(225, 225, 225, 1);;
+    background-color: rgba(55, 55, 55, 1);
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-weight: 500;
+}
+
+p, a, h1, h2, h3, hr {
+    margin: 0;padding: 0;
+}
+
+hr {
+    color: #252D35;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 1240px;
+    padding: 0 25px;
+}
+
+.btn {
+    padding: 1rem 2.5rem;
+    border: 2px solid rgba(55, 55, 55, 1);
+    background-color: #E6EAEF;
+    color:rgba(55, 55, 55, 1);
+    text-transform: uppercase;
+    font-family: 'Gilroy';
+    font-weight: 600;
+}
+
+/* header */
+
+header {
+    width: 100%;
+}
+
+.navbar-block {
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+
+.nav-line {
+    position: relative;
+    margin: auto 0;
+    width: 100%;
+    display: flex;
+    background-color: #E6EAEF;
+    color:rgba(55, 55, 55, 1);
+    cursor: pointer;
+}
+
+.nav-link {
+    position: relative;
+    width: 33.333%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    opacity: .7;
+    border-right: 1px solid rgba(55, 55, 55, .1);
+}
+
+.nav-link:after {
+    content: '';
+    /* border-right: 1px solid rgba(55, 55, 55, 1); */
+}
+
+.casper {
+    position: absolute;
+    box-sizing: border-box;
+    background-color: rgba(55, 55, 55, .2);
+    left: 0;
+    width: 33.339%;
+    height: 50px;
+    transition: left .5s ease-in-out;
+}
+
+/* main */
+
+main {
+    width: 100%;
+    right: 0;
+    position: relative;
+    transition: right .5s ease-in-out;
+}
+
+.main-block, .comment-block, .blacklist-block {
+    box-sizing: border-box;
+    margin: 0 0 20px;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color:rgba(55, 55, 55, .2);
+}
+
+main textarea {
+    /* margin: 0 auto; */
+    max-width: 550px;
+    border:0;
+    box-shadow:0 0 15px 4px rgba(255,255,255, .3);
+}
+
+main form>input:nth-child(1) {
+    box-shadow:0 0 15px 4px rgba(255,255,255, .3);
+}
+
+main input {
+    /* margin: 0 auto; */
+    max-width: 300px;
+}
+
+/* result */
+
+.result a {
+    text-decoration: none;
+    outline: none;
+    color: rgba(205, 205, 205, 1);
+}
+
+/* right */
+
+.wrapper-right {
+    box-sizing:border-box;
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    right: -100%;
+}
+
+/* super-right */
+
+.wrapper-super-richt {
+    box-sizing:border-box;
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    right: -200%;
+}

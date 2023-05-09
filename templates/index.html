@@ -1,0 +1,26 @@
+{{ include('base.html') }}
+
+{% block content %}
+<body>
+
+    {{ include('header.html') }}
+
+    <hr>
+
+    {% include('main.html') with {accounts:accounts, account:account} only %}
+
+    {% if result %}
+    <section>
+        <div class="container">
+            <div class="result">
+                {% for res, value in result %}
+                <p><a href="https://vk.com/{{ res }}" target="_blank">https://vk.com/{{ res }}</a> - {{ value }}</p>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    {% endif %}
+
+</body>
+
+{% endblock content %}
