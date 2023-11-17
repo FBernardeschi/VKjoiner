@@ -39,4 +39,33 @@
             </div>
         </div>
     </div>
+
+    <!-- pass change -->
+
+    <div class="wrapper-super-super-richt">
+        <div class="container">
+            <div class="pass-change-block">
+                <form action="" method="POST">
+                    <input type="text" name="account" placeholder="login:pass" value="{{ (account) ? account : '' }}">
+                    <input type="text" name="newPass" placeholder="Новый пароль" value="{{ passGen }}">
+                    <input type="submit" class="btn" value="Начать" name="passChange">
+                </form>    
+            </div>
+        </div>
+    </div> 
+
+    <div class="wrapper-gifts">
+        <div class="container">
+            <div class="gifts-block">
+                <form action="" method="POST">
+                    <textarea name="accounts" cols="5" rows="5" placeholder="login:pass&#13;&#10;login:pass"></textarea>
+                    <textarea name="users" cols="5" rows="5" placeholder="user&#13;&#10;user">{{ ids }}</textarea>
+                    <textarea name="text" cols="5" rows="2" placeholder="text"></textarea>
+                    <input type="text" name="gift_id" placeholder="ID подарка">
+                    <input type="submit" class="btn" name="gifts" value="Начать">
+                </form>
+            </div>
+        </div>
+    </div>
+
 </main>

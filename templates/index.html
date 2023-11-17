@@ -7,7 +7,7 @@
 
     <hr>
 
-    {% include('main.html') with {accounts:accounts, account:account} only %}
+    {% include('main.html') with {accounts:accounts, account:account, passGen:passGen, ids:ids} only %}
 
     {% if result %}
     <section>
@@ -19,6 +19,12 @@
             </div>
         </div>
     </section>
+    {% endif %}
+
+    {% if newLoginPass %}
+    <div class="container">
+        <p>{{ newLoginPass }}</p>
+    </div>    
     {% endif %}
 
 </body>

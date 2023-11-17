@@ -33,6 +33,7 @@ hr {
     text-transform: uppercase;
     font-family: 'Gilroy';
     font-weight: 600;
+    cursor: pointer;
 }
 
 /* header */
@@ -60,6 +61,7 @@ header {
 .nav-link {
     position: relative;
     width: 33.333%;
+    padding: 0 1rem;
     height: 50px;
     display: flex;
     justify-content: center;
@@ -81,7 +83,7 @@ header {
     box-sizing: border-box;
     background-color: rgba(55, 55, 55, .2);
     left: 0;
-    width: 33.339%;
+    width: 20%;
     height: 50px;
     transition: left .5s ease-in-out;
 }
@@ -95,7 +97,7 @@ main {
     transition: right .5s ease-in-out;
 }
 
-.main-block, .comment-block, .blacklist-block {
+.main-block, .comment-block, .blacklist-block, .pass-change-block {
     box-sizing: border-box;
     margin: 0 0 20px;
 }
@@ -121,6 +123,7 @@ main form>input:nth-child(1) {
 main input {
     /* margin: 0 auto; */
     max-width: 300px;
+    padding: 0.5rem;
 }
 
 /* result */
@@ -149,4 +152,24 @@ main input {
     width: 100vw;
     top: 0;
     right: -200%;
+}
+
+/* wrapper-super-super-richt */
+
+.wrapper-super-super-richt {
+    box-sizing:border-box;
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    right: -300%; 
+}
+
+/* wrapper gifts */
+
+.wrapper-gifts {
+    box-sizing:border-box;
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    right: -400%; 
 }
